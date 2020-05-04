@@ -4,19 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="What is Linux?">
+    <meta name="description" content="Linux filesystem">
     <meta name="author" content="LinuxForLife.com">
-    <title>What is Linux?</title>
+    <title>Linux filesystem</title>
     <link rel="icon" href="img/favicon.ico">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <script>
-
-        $(function () {
-            $("#footer").load("footer.html");$("#side-bar-right").load("side-bar-right.html"); $("#content-down").load("content-down.html"); $("#content-up").load("content-up.html");
-        });
-    </script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -44,8 +38,8 @@
                 <div class="list-group">
                     <a class="list-group-item " href="what-is-an-perating-system.html"><span class="fa fa-square"></span>&nbsp;What is an Operating System?</a>
                     <a class="list-group-item " href="unix-history.html"><span class="fa fa-square"></span>&nbsp;UNIX History</a>
-                    <a class="list-group-item active" href="what-is-linux.html"><span class="fa fa-square"></span>&nbsp;What is Linux?</a>
-                    <a class="list-group-item " href="linux-filesystem.html"><span class="fa fa-square"></span>&nbsp;Linux filesystem</a>
+                    <a class="list-group-item " href="what-is-linux.html"><span class="fa fa-square"></span>&nbsp;What is Linux?</a>
+                    <a class="list-group-item active" href="linux-filesystem.html"><span class="fa fa-square"></span>&nbsp;Linux filesystem</a>
                     <a class="list-group-item" href="gnu-linux-filesystem-structure.html"><span class="fa fa-square"></span>&nbsp;GNU / Linux filesystem structure</a>
                     <a class="list-group-item" href="shells-and-file-handling.html"><span class="fa fa-square"></span>&nbsp;Command line interpreters</a>
                 </div>
@@ -56,66 +50,68 @@
             <!-- Example row of columns -->
             <div class="row">
                 <div class="page-header">
-                    <h1>What is Linux?</h1>
+                    <h1>Linux filesystem</h1>
                 </div>
 
+     
+                <p>Almost everything in Unix is a file!</p>
                 <ul>
-                    <li>A clone of Unix</li>
-                    <li>Developed in 1991 by Linus Torvalds, a Finnish graduate student</li>
-                    <li>Inspired by and replacement of Minix</li>
-                    <li>Linus' Minix became Linux</li>
+                    <li>Regular files</li>
+                    <li>Directories - Directories are just files listing a set of files</li>
+                    <li>Symbolic links - Files referring to the name of another file</li>
+                    <li>Devices and peripherals - Read and write from devices as with regular files</li>
                     <li>
-                        Consist of
-                        <ul>
-                            <li>Linux Kernel</li>
-                            <li>GNU (GNU is Not Unix) Software</li>
-                            <li>Software Package management</li>
-                            <li>Others</li>
-                        </ul>
+                        Pipes - Used to cascade programs. <pre>
+cat *.log | grep error</pre>
                     </li>
-                    <li>Originally developed for 32-bit x86-based PC</li>
-                    <li>
-                        Ported to other architectures, eg.
-                        <ul>
-                            <li>Alpha, VAX, PowerPC, IBM S/390, MIPS, IA-64</li>
-                            <li>PS2, TiVo, cellphones, watches, Nokia N810, NDS, routers, NAS, GPS, …</li>
-                        </ul>
-                    </li>
+                    <li>Sockets - Inter process communication</li>
                 </ul>
-                <p>Linux uses many tools developed as part of Berkeley’s BSD operating system, MIT’s X  Window System, and the Free Software Foundation's GNU project. The main system libraries were started by the GNU project, with improvements provided by the Linux community. Linux networking-administration tools were derived from 4.3BSD code; recent BSD derivatives such as Free BSD have borrowed code from Linux in return. The Linux system is maintained by a loose network of developers collaborating over the Internet, with a small number of public ftp sites acting as de facto standard repositories</p>
-                <p>File System Hierarchy Standard document maintained by the Linux community to ensure compatibility across the various system components</p>
+                <p>&nbsp;</p>
+
+                <h1>File names</h1>
+                <p>File name features since the beginning of Unix</p>
                 <ul>
-                    <li>Specifies overall layout of a standard Linux file system, determines under which directory names configuration files, libraries, system binaries, and run-time data files should be stored</li>
+                    <li>File names in linux are Case sensitive</li>
+                    <li>File names in linux has No obvious length limit</li>
+                    <li>File names in linux can contain any character (including whitespace, except /). File types stored in the file (“magic numbers”). File name extensions not needed and not interpreted. Just used for user convenience.</li>
+                    <li>
+                        File name examples:
+                        <pre>
+README			.bashrc			Windows Buglist
+index.htm		index.html		index.html.old
+</pre>
+                    </li>
                 </ul>
 
                 <p>&nbsp;</p>
-
-                <h1>Which Linux Distribution is better?</h1>
+                <h1>File paths</h1>
+                <p>A path is a sequence of nested directories with a file or directory at the end, separated by the / character</p>
                 <ul>
-                    <li>More the 300 Linux Distributions available worldwide</li>
-                    <li>Slackware (one of the oldest, simple and stable distro.)</li>
                     <li>
-                        Redhat
-                        <ul>
-                            <li>RHEL (commercially support)</li>
-                            <li>Fedora (free)</li>
-                        </ul>
+                        Relative path:
+                        <pre>
+$ documents/files/my_filwe.txt
+</pre>
+                        Relative to the current directory
                     </li>
-                    <li>CentOS (free RHEL, based in England)</li>
-                    <li>SuSe ( based in German)</li>
-                    <li>Gentoo (Source code based)</li>
-                    <li>Debian (one of the few called GNU/Linux)</li>
-                    <li>Ubuntu (based in South Africa)</li>
-                    <li>Knoppix (first LiveCD distro.)</li>
-                    <li>and more ...</li>
+                    <li>
+                        Absolute path:
+                        <pre>
+$ /home/pc_name/dir/file_abc.txt
+</pre>
+                    </li>
+                    <li>
+                        root directory.
+                        <pre>
+$ /
+</pre>
+                        Start of absolute paths for all files on the system (even for files on removable devices or network shared).
+                    </li>
+
                 </ul>
-                <p>Before selecting to youse any linux disto, Ask yourself these questions</p>
-                <ol>
-                    <li>Is it going to be around in 5 yrs?</li>
-                    <li>Is it giong to stay on top of the latest security patches?</li>
-                    <li>Is it going to release updated software promptly?</li>
-                    <li>If I have problems, will the vendor talk to me?</li>
-                </ol>
+                <p></p>
+                <p></p>
+                <p></p>
                 <p></p>
                 <p></p>
                 <p></p>
@@ -133,8 +129,6 @@
 
     </div>
     <!-- Fixed footer -->
-
-
     <!--
     To change this license header, choose License Headers in Project Properties.
     To change this template file, choose Tools | Templates
