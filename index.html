@@ -1,219 +1,74 @@
-<!DOCTYPE html>
 
-<html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="favicon.png" type="image/png">
-        <script src="https://kit.fontawesome.com/7ad5218c7d.js" crossorigin="anonymous"></script>
-        <style>
-            html {
-                height: 100%;
-            }
+<!-- saved from url=(0033)http://localhost:5555/gallery.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
 
-            body {
-                background-color: #050505;
-                color: white;
-                font-family: "Segoe UI",Arial,sans-serif;
-                height: 100%;
-            }
+    .description {
+        text-align: left;
+        width: 100%;
+    }
 
-            header {
-                height: 40%;
-                margin: auto auto;
-                align-items: center;
-                justify-content: center;
-                display: flex;
-            }
+    .description td {
+        text-align: left;
+    }
 
-            tabs {
-                position: relative;
-                height: 60%;
-                width: 100%;
-            }
+    td {
+        text-align: center;
+    }
+    <!-- link href="default.css" rel="stylesheet" type="text/css -->
+  </style>
 
-            hr {
-                margin-bottom: 20px;
-            }
-            /*.content {
-                max-width: 500px;
-                margin: auto;
-                background: white;
-                padding: 10px;
-                width: 100%;
-                display: block;
-                text-align: center;
-                font-family: "Segoe UI",Arial,sans-serif;
-            }*/
-            .container {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -moz-transform: translateX(-50%) translateY(-50%);
-                -webkit-transform: translateX(-50%) translateY(-50%);
-                transform: translateX(-50%) translateY(-50%);
-                max-width: 500px;
-                margin: auto;
-                background: white;
-                padding: 10px;
-                width: 100%;
-                display: block;
-                text-align: center;
-                font-family: "Segoe UI",Arial,sans-serif;
-            }
-        </style>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="annYsuHo">
-        <meta name="author" content="annYsuHo">
-        <title>annYsuHo</title>
-        <link rel="icon" href="img/favicon.ico">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/custom.css">
-        <script>
-    
-            $(function () {
-                $("#footer").load("footer.html");$("#side-bar-right").load("side-bar-right.html"); $("#content-down").load("content-down.html"); $("#content-up").load("content-up.html");
-            });
-        </script>
-    </head>
-
-    <body>
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-            <div class="asdf">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="annysuho.html">annYsuHo</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="annysuho.html">Something Else</a></li>
-                        <li><a href="annysuho.html">Other Thing</a></li>
-                        <li><a href="annysuho.html">Thing 5</a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div>
-        </div><!--navbar -->
-        <header>
-            <div class="container">
-                <h0>This website is hand coded and underconstruction; please bear with me.</h0>
-                <h0>Click About to learn more about me</h0>
-                <h1>annYsuHo</h1>
-                <h2 class="buttons">
-                    <a class="link" href="resume.pdf">
-                        <i class="fas fa-file"></i>
-                    </a>
-                    <a class="link" href="mailto:annysuho@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a class="link" href="https://www.linkedin.com/in/anny-suho-250642186">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a class="link" href="https://github.com/annysuho">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a class="link" href="https://www.youtube.com/channel/UCjuiT_kNQK7PCQoXBMCbLFg">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a class="link" href="https://www.google.com">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </h2>
-            </div>
-        </header>
-    <!--
-        <tabs>
-            <div class="bar">
-                <button class="bar-item" onclick="showTab('Projects')">Projects</button>
-                <button class="bar-item" onclick="showTab('Games')">Games</button>
-                <button class="bar-item" onclick="showTab('Music')">Music</button>
-            </div>
-            
-            <div id="Projects" class="tab">
-                <div class="tab-header">Project Links</div>
-                <hr>
-                <a class="tab-link" href="https://audemos.space/">
-                    <span class="tab-item">
-                        audemos.space - Audio sharing website, allows private sharing of audio files up to 250 MB in size for 3 days
-                    </span>
-                </a>
-                <p>See github for more projects</p>
-            </div>
-
-            <div id="Games" class="tab" style="display:none">
-                <div class="tab-header">Games</div>
-                <hr>
-                <a class="tab-link" href="">
-                    <span class="tab-item">
-                        Ship Game - Space Exploration/Combat Game
-                    </span>
-                </a>
-                <div>
-                    <img class="image" src="ShipGame1.png">
-                    <img class="image" src="ShipGame2.png">
-                </div>
-                <a class="tab-link" href="">
-                    <span class="tab-item">
-                        Spellsword - Top-Down Action RPG
-                    </span>
-                </a>
-                <div>
-                    <img class="image" src="TopDownGame1.png">
-                    <img class="image" src="TopDownGame2.png">
-                </div>
-                <p>See github for more projects</p>
-            </div>
-
-            <div id="Music" class="tab" style="display:none">
-                <div class="tab-header">Music</div>
-                <hr>
-                <div>
-                    <iframe class="music" width="420" height="315" frameborder="0"
-                        src="https://www.youtube.com/embed/U5HAo_7wTJY">
-                    </iframe>
-                    <iframe class="music" width="420" height="315" frameborder="0"
-                        src="https://www.youtube.com/embed/vsn1UUbgNcY">
-                    </iframe>
-                    <iframe class="music" width="420" height="315" frameborder="0"
-                        src="https://www.youtube.com/embed/yeo5qQYDRFs">
-                    </iframe>
-                    <iframe class="music" width="420" height="315" frameborder="0"
-                        src="https://www.youtube.com/embed/P0slAiEEdiE">
-                    </iframe>
-                    <iframe class="music" width="420" height="315" frameborder="0"
-                        src="https://www.youtube.com/embed/A4Cxy6EMX2I">
-                    </iframe>
-                    <iframe class="music" width="420" height="315" frameborder="0"
-                        src="https://www.youtube.com/embed/wmy5NaYS9Oo">
-                    </iframe>
-                    <iframe class="music" width="420" height="315" frameborder="0"
-                        src="https://www.youtube.com/embed/RgWoiyHgZvE">
-                    </iframe>
-                    <iframe class="music" width="420" height="315" frameborder="0"
-                        src="https://www.youtube.com/embed/JaYrTe7Bi6g">
-                    </iframe>
-                </div>
-            </div>
-        </tabs>
-    -->
-    </body>
-
-    <script>
-        function showTab(tabName) {
-            var i;
-            var x = document.getElementsByClassName("tab");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            document.getElementById(tabName).style.display = "block";
-        }
-    </script>
-
-</html>
+</head><body><h1> Hanson's Gallery </h1>
+<hr><h2>KNOWN ISSUES</h2>
+<ul><li>not enough waifus</li></ul><h2>Features to be added:</h2>
+<ol><li>Add moar anime girl</li><li>choe pic best prof &lt;3</li><li>Add HTTP POST and GET Button to send request</li><li>tic tac toe?</li></ol><p><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></p><h2>Testing PROC_GALLERY:</h2>
+<h3>Testing matrix:</h3>
+<table class="center" border="1">
+<tbody><tr><td style="text-align: center;"><img alt="Chitoge.png" src="./index_files/Chitoge.png" width="100%"></td><td style="text-align: center;"><img alt="yui.gif" src="./index_files/yui.gif" width="100%"></td><td style="text-align: center;"><img alt="Choe.jpg" src="./index_files/Choe.jpg" width="100%"></td></tr><tr><td>This is one</td><td>This is second</td><td>This is third</td></tr><tr><td style="text-align: center;"><img alt="choe2.webp" src="./index_files/choe2.webp" width="100%"></td><td style="text-align: center;"><img alt="shizuka_hiratsuka.jpg" src="./index_files/shizuka_hiratsuka.jpg" width="100%"></td><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>This is kpop choe</td><td>i drew this 🥺</td><td>Mi amor</td></tr><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td><td style="text-align: center;"><img alt="onodera.png" src="./index_files/onodera.png" width="100%"></td><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>mi amor2</td><td>best girl</td><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>rezero &lt;3</td><td>mi amor2</td><td>Mi amor</td></tr></tbody></table>
+<p><table class="center" border="1">
+<tbody><tr><td style="text-align: center;"><img alt="choe2.webp" src="./index_files/choe2.webp" width="100%"></td><td style="text-align: center;"><img alt="Choe.jpg" src="./index_files/Choe.jpg" width="100%"></td><td style="text-align: center;"><img alt="yui.gif" src="./index_files/yui.gif" width="100%"></td></tr><tr><td>This is kpop choe</td><td>This is third</td><td>This is second</td></tr><tr><td style="text-align: center;"><img alt="Chitoge.png" src="./index_files/Chitoge.png" width="100%"></td><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>This is one</td><td>rezero &lt;3</td><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="onodera.png" src="./index_files/onodera.png" width="100%"></td><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>best girl</td><td>mi amor2</td><td>mi amor2</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td><td style="text-align: center;"><img alt="shizuka_hiratsuka.jpg" src="./index_files/shizuka_hiratsuka.jpg" width="100%"></td></tr><tr><td>Mi amor</td><td>Mi amor</td><td>i drew this 🥺</td></tr></tbody></table>
+</p><p><table class="center" border="1">
+<tbody><tr><td style="text-align: center;"><img alt="shizuka_hiratsuka.jpg" src="./index_files/shizuka_hiratsuka.jpg" width="100%"></td><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>i drew this 🥺</td><td>Mi amor</td><td>Mi amor</td></tr><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td><td style="text-align: center;"><img alt="onodera.png" src="./index_files/onodera.png" width="100%"></td></tr><tr><td>mi amor2</td><td>mi amor2</td><td>best girl</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td><td style="text-align: center;"><img alt="Chitoge.png" src="./index_files/Chitoge.png" width="100%"></td></tr><tr><td>rezero &lt;3</td><td>rezero &lt;3</td><td>This is one</td></tr><tr><td style="text-align: center;"><img alt="yui.gif" src="./index_files/yui.gif" width="100%"></td><td style="text-align: center;"><img alt="Choe.jpg" src="./index_files/Choe.jpg" width="100%"></td><td style="text-align: center;"><img alt="choe2.webp" src="./index_files/choe2.webp" width="100%"></td></tr><tr><td>This is second</td><td>This is third</td><td>This is kpop choe</td></tr></tbody></table>
+</p><p><table class="center" border="1">
+<tbody><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>mi amor2</td><td>mi amor2</td><td>Mi amor</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td><td style="text-align: center;"><img alt="yui.gif" src="./index_files/yui.gif" width="100%"></td><td style="text-align: center;"><img alt="onodera.png" src="./index_files/onodera.png" width="100%"></td></tr><tr><td>Mi amor</td><td>This is second</td><td>best girl</td></tr><tr><td style="text-align: center;"><img alt="Chitoge.png" src="./index_files/Chitoge.png" width="100%"></td><td style="text-align: center;"><img alt="Choe.jpg" src="./index_files/Choe.jpg" width="100%"></td><td style="text-align: center;"><img alt="choe2.webp" src="./index_files/choe2.webp" width="100%"></td></tr><tr><td>This is one</td><td>This is third</td><td>This is kpop choe</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td><td style="text-align: center;"><img alt="shizuka_hiratsuka.jpg" src="./index_files/shizuka_hiratsuka.jpg" width="100%"></td></tr><tr><td>rezero &lt;3</td><td>rezero &lt;3</td><td>i drew this 🥺</td></tr></tbody></table>
+</p><p><table class="center" border="1">
+<tbody><tr><td style="text-align: center;"><img alt="shizuka_hiratsuka.jpg" src="./index_files/shizuka_hiratsuka.jpg" width="100%"></td><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>i drew this 🥺</td><td>rezero &lt;3</td><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="choe2.webp" src="./index_files/choe2.webp" width="100%"></td><td style="text-align: center;"><img alt="Choe.jpg" src="./index_files/Choe.jpg" width="100%"></td><td style="text-align: center;"><img alt="Chitoge.png" src="./index_files/Chitoge.png" width="100%"></td></tr><tr><td>This is kpop choe</td><td>This is third</td><td>This is one</td></tr><tr><td style="text-align: center;"><img alt="onodera.png" src="./index_files/onodera.png" width="100%"></td><td style="text-align: center;"><img alt="yui.gif" src="./index_files/yui.gif" width="100%"></td><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>best girl</td><td>This is second</td><td>Mi amor</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>Mi amor</td><td>mi amor2</td><td>mi amor2</td></tr></tbody></table>
+</p><p><table class="center" border="1">
+<tbody><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td><td style="text-align: center;"><img alt="Choe.jpg" src="./index_files/Choe.jpg" width="100%"></td><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>Mi amor</td><td>This is third</td><td>mi amor2</td></tr><tr><td style="text-align: center;"><img alt="shizuka_hiratsuka.jpg" src="./index_files/shizuka_hiratsuka.jpg" width="100%"></td><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td><td style="text-align: center;"><img alt="Chitoge.png" src="./index_files/Chitoge.png" width="100%"></td></tr><tr><td>i drew this 🥺</td><td>Mi amor</td><td>This is one</td></tr><tr><td style="text-align: center;"><img alt="yui.gif" src="./index_files/yui.gif" width="100%"></td><td style="text-align: center;"><img alt="choe2.webp" src="./index_files/choe2.webp" width="100%"></td><td style="text-align: center;"><img alt="onodera.png" src="./index_files/onodera.png" width="100%"></td></tr><tr><td>This is second</td><td>This is kpop choe</td><td>best girl</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>rezero &lt;3</td><td>rezero &lt;3</td><td>mi amor2</td></tr></tbody></table>
+</p><p><table class="center" border="1">
+<tbody><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td><td style="text-align: center;"><img alt="yui.gif" src="./index_files/yui.gif" width="100%"></td></tr><tr><td>rezero &lt;3</td><td>mi amor2</td><td>This is second</td></tr><tr><td style="text-align: center;"><img alt="onodera.png" src="./index_files/onodera.png" width="100%"></td><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td><td style="text-align: center;"><img alt="Chitoge.png" src="./index_files/Chitoge.png" width="100%"></td></tr><tr><td>best girl</td><td>mi amor2</td><td>This is one</td></tr><tr><td style="text-align: center;"><img alt="Choe.jpg" src="./index_files/Choe.jpg" width="100%"></td><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td><td style="text-align: center;"><img alt="shizuka_hiratsuka.jpg" src="./index_files/shizuka_hiratsuka.jpg" width="100%"></td></tr><tr><td>This is third</td><td>Mi amor</td><td>i drew this 🥺</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td><td style="text-align: center;"><img alt="choe2.webp" src="./index_files/choe2.webp" width="100%"></td></tr><tr><td>Mi amor</td><td>rezero &lt;3</td><td>This is kpop choe</td></tr></tbody></table>
+</p><p></p><h3>Testing list:</h3>
+<table class="center" border="1">
+<tbody><tr><td style="text-align: center;"><img alt="Chitoge.png" src="./index_files/Chitoge.png" width="100%"></td></tr><tr><td>This is one</td></tr><tr><td style="text-align: center;"><img alt="yui.gif" src="./index_files/yui.gif" width="100%"></td></tr><tr><td>This is second</td></tr><tr><td style="text-align: center;"><img alt="Choe.jpg" src="./index_files/Choe.jpg" width="100%"></td></tr><tr><td>This is third</td></tr><tr><td style="text-align: center;"><img alt="choe2.webp" src="./index_files/choe2.webp" width="100%"></td></tr><tr><td>This is kpop choe</td></tr><tr><td style="text-align: center;"><img alt="shizuka_hiratsuka.jpg" src="./index_files/shizuka_hiratsuka.jpg" width="100%"></td></tr><tr><td>i drew this 🥺</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>Mi amor</td></tr><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>mi amor2</td></tr><tr><td style="text-align: center;"><img alt="onodera.png" src="./index_files/onodera.png" width="100%"></td></tr><tr><td>best girl</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>mi amor2</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>Mi amor</td></tr></tbody></table>
+<p><table class="center" border="1">
+<tbody><tr><td style="text-align: center;"><img alt="choe2.webp" src="./index_files/choe2.webp" width="100%"></td></tr><tr><td>This is kpop choe</td></tr><tr><td style="text-align: center;"><img alt="Choe.jpg" src="./index_files/Choe.jpg" width="100%"></td></tr><tr><td>This is third</td></tr><tr><td style="text-align: center;"><img alt="yui.gif" src="./index_files/yui.gif" width="100%"></td></tr><tr><td>This is second</td></tr><tr><td style="text-align: center;"><img alt="Chitoge.png" src="./index_files/Chitoge.png" width="100%"></td></tr><tr><td>This is one</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="onodera.png" src="./index_files/onodera.png" width="100%"></td></tr><tr><td>best girl</td></tr><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>mi amor2</td></tr><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>mi amor2</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>Mi amor</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>Mi amor</td></tr><tr><td style="text-align: center;"><img alt="shizuka_hiratsuka.jpg" src="./index_files/shizuka_hiratsuka.jpg" width="100%"></td></tr><tr><td>i drew this 🥺</td></tr></tbody></table>
+</p><p><table class="center" border="1">
+<tbody><tr><td style="text-align: center;"><img alt="shizuka_hiratsuka.jpg" src="./index_files/shizuka_hiratsuka.jpg" width="100%"></td></tr><tr><td>i drew this 🥺</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>Mi amor</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>Mi amor</td></tr><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>mi amor2</td></tr><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>mi amor2</td></tr><tr><td style="text-align: center;"><img alt="onodera.png" src="./index_files/onodera.png" width="100%"></td></tr><tr><td>best girl</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="Chitoge.png" src="./index_files/Chitoge.png" width="100%"></td></tr><tr><td>This is one</td></tr><tr><td style="text-align: center;"><img alt="yui.gif" src="./index_files/yui.gif" width="100%"></td></tr><tr><td>This is second</td></tr><tr><td style="text-align: center;"><img alt="Choe.jpg" src="./index_files/Choe.jpg" width="100%"></td></tr><tr><td>This is third</td></tr><tr><td style="text-align: center;"><img alt="choe2.webp" src="./index_files/choe2.webp" width="100%"></td></tr><tr><td>This is kpop choe</td></tr></tbody></table>
+</p><p><table class="center" border="1">
+<tbody><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>mi amor2</td></tr><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>mi amor2</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>Mi amor</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>Mi amor</td></tr><tr><td style="text-align: center;"><img alt="yui.gif" src="./index_files/yui.gif" width="100%"></td></tr><tr><td>This is second</td></tr><tr><td style="text-align: center;"><img alt="onodera.png" src="./index_files/onodera.png" width="100%"></td></tr><tr><td>best girl</td></tr><tr><td style="text-align: center;"><img alt="Chitoge.png" src="./index_files/Chitoge.png" width="100%"></td></tr><tr><td>This is one</td></tr><tr><td style="text-align: center;"><img alt="Choe.jpg" src="./index_files/Choe.jpg" width="100%"></td></tr><tr><td>This is third</td></tr><tr><td style="text-align: center;"><img alt="choe2.webp" src="./index_files/choe2.webp" width="100%"></td></tr><tr><td>This is kpop choe</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="shizuka_hiratsuka.jpg" src="./index_files/shizuka_hiratsuka.jpg" width="100%"></td></tr><tr><td>i drew this 🥺</td></tr></tbody></table>
+</p><p><table class="center" border="1">
+<tbody><tr><td style="text-align: center;"><img alt="shizuka_hiratsuka.jpg" src="./index_files/shizuka_hiratsuka.jpg" width="100%"></td></tr><tr><td>i drew this 🥺</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="choe2.webp" src="./index_files/choe2.webp" width="100%"></td></tr><tr><td>This is kpop choe</td></tr><tr><td style="text-align: center;"><img alt="Choe.jpg" src="./index_files/Choe.jpg" width="100%"></td></tr><tr><td>This is third</td></tr><tr><td style="text-align: center;"><img alt="Chitoge.png" src="./index_files/Chitoge.png" width="100%"></td></tr><tr><td>This is one</td></tr><tr><td style="text-align: center;"><img alt="onodera.png" src="./index_files/onodera.png" width="100%"></td></tr><tr><td>best girl</td></tr><tr><td style="text-align: center;"><img alt="yui.gif" src="./index_files/yui.gif" width="100%"></td></tr><tr><td>This is second</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>Mi amor</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>Mi amor</td></tr><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>mi amor2</td></tr><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>mi amor2</td></tr></tbody></table>
+</p><p><table class="center" border="1">
+<tbody><tr><td style="text-align: center;"><img alt="choe2.webp" src="./index_files/choe2.webp" width="100%"></td></tr><tr><td>This is kpop choe</td></tr><tr><td style="text-align: center;"><img alt="Choe.jpg" src="./index_files/Choe.jpg" width="100%"></td></tr><tr><td>This is third</td></tr><tr><td style="text-align: center;"><img alt="onodera.png" src="./index_files/onodera.png" width="100%"></td></tr><tr><td>best girl</td></tr><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>mi amor2</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>Mi amor</td></tr><tr><td style="text-align: center;"><img alt="shizuka_hiratsuka.jpg" src="./index_files/shizuka_hiratsuka.jpg" width="100%"></td></tr><tr><td>i drew this 🥺</td></tr><tr><td style="text-align: center;"><img alt="Chitoge.png" src="./index_files/Chitoge.png" width="100%"></td></tr><tr><td>This is one</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>mi amor2</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="yui.gif" src="./index_files/yui.gif" width="100%"></td></tr><tr><td>This is second</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>Mi amor</td></tr></tbody></table>
+</p><p><table class="center" border="1">
+<tbody><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>mi amor2</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>Mi amor</td></tr><tr><td style="text-align: center;"><img alt="yuki.gif" src="./index_files/yuki.gif" width="100%"></td></tr><tr><td>mi amor2</td></tr><tr><td style="text-align: center;"><img alt="yui.gif" src="./index_files/yui.gif" width="100%"></td></tr><tr><td>This is second</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="choe2.webp" src="./index_files/choe2.webp" width="100%"></td></tr><tr><td>This is kpop choe</td></tr><tr><td style="text-align: center;"><img alt="Choe.jpg" src="./index_files/Choe.jpg" width="100%"></td></tr><tr><td>This is third</td></tr><tr><td style="text-align: center;"><img alt="onodera.png" src="./index_files/onodera.png" width="100%"></td></tr><tr><td>best girl</td></tr><tr><td style="text-align: center;"><img alt="sensei.gif" src="./index_files/sensei.gif" width="100%"></td></tr><tr><td>Mi amor</td></tr><tr><td style="text-align: center;"><img alt="echidna.jpg" src="./index_files/echidna.jpg" width="100%"></td></tr><tr><td>rezero &lt;3</td></tr><tr><td style="text-align: center;"><img alt="shizuka_hiratsuka.jpg" src="./index_files/shizuka_hiratsuka.jpg" width="100%"></td></tr><tr><td>i drew this 🥺</td></tr><tr><td style="text-align: center;"><img alt="Chitoge.png" src="./index_files/Chitoge.png" width="100%"></td></tr><tr><td>This is one</td></tr></tbody></table>
+</p><p></p><h3>Testing detail:</h3>
+<table class="description" border="1">
+<tbody><tr><th>Filename</th><th>Description</th><th>File Modified Date</th><th>File Size</th></tr><tr><td>Chitoge.png</td><td>This is one</td><td>2020 September 04 03:28:55.</td><td>185385 bytes</td></tr><tr><td>yui.gif</td><td>This is second</td><td>2020 September 04 03:30:31.</td><td>1110631 bytes</td></tr><tr><td>Choe.jpg</td><td>This is third</td><td>2020 September 04 03:31:17.</td><td>117663 bytes</td></tr><tr><td>choe2.webp</td><td>This is kpop choe</td><td>2020 September 04 03:32:09.</td><td>88452 bytes</td></tr><tr><td>shizuka_hiratsuka.jpg</td><td>i drew this 🥺</td><td>1969 December 31 18:00:00.</td><td> bytes</td></tr><tr><td>sensei.gif</td><td>Mi amor</td><td>2020 September 03 22:07:09.</td><td>3689838 bytes</td></tr><tr><td>yuki.gif</td><td>mi amor2</td><td>2020 September 03 22:10:19.</td><td>24245514 bytes</td></tr><tr><td>onodera.png</td><td>best girl</td><td>2020 September 03 22:18:35.</td><td>288063 bytes</td></tr><tr><td>echidna.jpg</td><td>rezero &lt;3</td><td>2020 September 03 22:24:03.</td><td>43372 bytes</td></tr><tr><td>echidna.jpg</td><td>rezero &lt;3</td><td>2020 September 03 22:24:03.</td><td>43372 bytes</td></tr><tr><td>yuki.gif</td><td>mi amor2</td><td>2020 September 03 22:10:19.</td><td>24245514 bytes</td></tr><tr><td>sensei.gif</td><td>Mi amor</td><td>2020 September 03 22:07:09.</td><td>3689838 bytes</td></tr></tbody></table>
+<p><table class="description" border="1">
+<tbody><tr><th>Filename</th><th>Description</th><th>File Modified Date</th><th>File Size</th></tr><tr><td>choe2.webp</td><td>This is kpop choe</td><td>2020 September 04 03:32:09.</td><td>88452 bytes</td></tr><tr><td>Choe.jpg</td><td>This is third</td><td>2020 September 04 03:31:17.</td><td>117663 bytes</td></tr><tr><td>yui.gif</td><td>This is second</td><td>2020 September 04 03:30:31.</td><td>1110631 bytes</td></tr><tr><td>Chitoge.png</td><td>This is one</td><td>2020 September 04 03:28:55.</td><td>185385 bytes</td></tr><tr><td>echidna.jpg</td><td>rezero &lt;3</td><td>2020 September 03 22:24:03.</td><td>43372 bytes</td></tr><tr><td>echidna.jpg</td><td>rezero &lt;3</td><td>2020 September 03 22:24:03.</td><td>43372 bytes</td></tr><tr><td>onodera.png</td><td>best girl</td><td>2020 September 03 22:18:35.</td><td>288063 bytes</td></tr><tr><td>yuki.gif</td><td>mi amor2</td><td>2020 September 03 22:10:19.</td><td>24245514 bytes</td></tr><tr><td>yuki.gif</td><td>mi amor2</td><td>2020 September 03 22:10:19.</td><td>24245514 bytes</td></tr><tr><td>sensei.gif</td><td>Mi amor</td><td>2020 September 03 22:07:09.</td><td>3689838 bytes</td></tr><tr><td>sensei.gif</td><td>Mi amor</td><td>2020 September 03 22:07:09.</td><td>3689838 bytes</td></tr><tr><td>shizuka_hiratsuka.jpg</td><td>i drew this 🥺</td><td>1969 December 31 18:00:00.</td><td> bytes</td></tr></tbody></table>
+</p><p><table class="description" border="1">
+<tbody><tr><th>Filename</th><th>Description</th><th>File Modified Date</th><th>File Size</th></tr><tr><td>shizuka_hiratsuka.jpg</td><td>i drew this 🥺</td><td>1969 December 31 18:00:00.</td><td> bytes</td></tr><tr><td>sensei.gif</td><td>Mi amor</td><td>2020 September 03 22:07:09.</td><td>3689838 bytes</td></tr><tr><td>sensei.gif</td><td>Mi amor</td><td>2020 September 03 22:07:09.</td><td>3689838 bytes</td></tr><tr><td>yuki.gif</td><td>mi amor2</td><td>2020 September 03 22:10:19.</td><td>24245514 bytes</td></tr><tr><td>yuki.gif</td><td>mi amor2</td><td>2020 September 03 22:10:19.</td><td>24245514 bytes</td></tr><tr><td>onodera.png</td><td>best girl</td><td>2020 September 03 22:18:35.</td><td>288063 bytes</td></tr><tr><td>echidna.jpg</td><td>rezero &lt;3</td><td>2020 September 03 22:24:03.</td><td>43372 bytes</td></tr><tr><td>echidna.jpg</td><td>rezero &lt;3</td><td>2020 September 03 22:24:03.</td><td>43372 bytes</td></tr><tr><td>Chitoge.png</td><td>This is one</td><td>2020 September 04 03:28:55.</td><td>185385 bytes</td></tr><tr><td>yui.gif</td><td>This is second</td><td>2020 September 04 03:30:31.</td><td>1110631 bytes</td></tr><tr><td>Choe.jpg</td><td>This is third</td><td>2020 September 04 03:31:17.</td><td>117663 bytes</td></tr><tr><td>choe2.webp</td><td>This is kpop choe</td><td>2020 September 04 03:32:09.</td><td>88452 bytes</td></tr></tbody></table>
+</p><p><table class="description" border="1">
+<tbody><tr><th>Filename</th><th>Description</th><th>File Modified Date</th><th>File Size</th></tr><tr><td>yuki.gif</td><td>mi amor2</td><td>2020 September 03 22:10:19.</td><td>24245514 bytes</td></tr><tr><td>yuki.gif</td><td>mi amor2</td><td>2020 September 03 22:10:19.</td><td>24245514 bytes</td></tr><tr><td>sensei.gif</td><td>Mi amor</td><td>2020 September 03 22:07:09.</td><td>3689838 bytes</td></tr><tr><td>sensei.gif</td><td>Mi amor</td><td>2020 September 03 22:07:09.</td><td>3689838 bytes</td></tr><tr><td>yui.gif</td><td>This is second</td><td>2020 September 04 03:30:31.</td><td>1110631 bytes</td></tr><tr><td>onodera.png</td><td>best girl</td><td>2020 September 03 22:18:35.</td><td>288063 bytes</td></tr><tr><td>Chitoge.png</td><td>This is one</td><td>2020 September 04 03:28:55.</td><td>185385 bytes</td></tr><tr><td>Choe.jpg</td><td>This is third</td><td>2020 September 04 03:31:17.</td><td>117663 bytes</td></tr><tr><td>choe2.webp</td><td>This is kpop choe</td><td>2020 September 04 03:32:09.</td><td>88452 bytes</td></tr><tr><td>echidna.jpg</td><td>rezero &lt;3</td><td>2020 September 03 22:24:03.</td><td>43372 bytes</td></tr><tr><td>echidna.jpg</td><td>rezero &lt;3</td><td>2020 September 03 22:24:03.</td><td>43372 bytes</td></tr><tr><td>shizuka_hiratsuka.jpg</td><td>i drew this 🥺</td><td>1969 December 31 18:00:00.</td><td> bytes</td></tr></tbody></table>
+</p><p><table class="description" border="1">
+<tbody><tr><th>Filename</th><th>Description</th><th>File Modified Date</th><th>File Size</th></tr><tr><td>shizuka_hiratsuka.jpg</td><td>i drew this 🥺</td><td>1969 December 31 18:00:00.</td><td> bytes</td></tr><tr><td>echidna.jpg</td><td>rezero &lt;3</td><td>2020 September 03 22:24:03.</td><td>43372 bytes</td></tr><tr><td>echidna.jpg</td><td>rezero &lt;3</td><td>2020 September 03 22:24:03.</td><td>43372 bytes</td></tr><tr><td>choe2.webp</td><td>This is kpop choe</td><td>2020 September 04 03:32:09.</td><td>88452 bytes</td></tr><tr><td>Choe.jpg</td><td>This is third</td><td>2020 September 04 03:31:17.</td><td>117663 bytes</td></tr><tr><td>Chitoge.png</td><td>This is one</td><td>2020 September 04 03:28:55.</td><td>185385 bytes</td></tr><tr><td>onodera.png</td><td>best girl</td><td>2020 September 03 22:18:35.</td><td>288063 bytes</td></tr><tr><td>yui.gif</td><td>This is second</td><td>2020 September 04 03:30:31.</td><td>1110631 bytes</td></tr><tr><td>sensei.gif</td><td>Mi amor</td><td>2020 September 03 22:07:09.</td><td>3689838 bytes</td></tr><tr><td>sensei.gif</td><td>Mi amor</td><td>2020 September 03 22:07:09.</td><td>3689838 bytes</td></tr><tr><td>yuki.gif</td><td>mi amor2</td><td>2020 September 03 22:10:19.</td><td>24245514 bytes</td></tr><tr><td>yuki.gif</td><td>mi amor2</td><td>2020 September 03 22:10:19.</td><td>24245514 bytes</td></tr></tbody></table>
+</p><p><table class="description" border="1">
+<tbody><tr><th>Filename</th><th>Description</th><th>File Modified Date</th><th>File Size</th></tr><tr><td>sensei.gif</td><td>Mi amor</td><td>2020 September 03 22:07:09.</td><td>3689838 bytes</td></tr><tr><td>yuki.gif</td><td>mi amor2</td><td>2020 September 03 22:10:19.</td><td>24245514 bytes</td></tr><tr><td>Choe.jpg</td><td>This is third</td><td>2020 September 04 03:31:17.</td><td>117663 bytes</td></tr><tr><td>yui.gif</td><td>This is second</td><td>2020 September 04 03:30:31.</td><td>1110631 bytes</td></tr><tr><td>choe2.webp</td><td>This is kpop choe</td><td>2020 September 04 03:32:09.</td><td>88452 bytes</td></tr><tr><td>Chitoge.png</td><td>This is one</td><td>2020 September 04 03:28:55.</td><td>185385 bytes</td></tr><tr><td>echidna.jpg</td><td>rezero &lt;3</td><td>2020 September 03 22:24:03.</td><td>43372 bytes</td></tr><tr><td>yuki.gif</td><td>mi amor2</td><td>2020 September 03 22:10:19.</td><td>24245514 bytes</td></tr><tr><td>onodera.png</td><td>best girl</td><td>2020 September 03 22:18:35.</td><td>288063 bytes</td></tr><tr><td>shizuka_hiratsuka.jpg</td><td>i drew this 🥺</td><td>1969 December 31 18:00:00.</td><td> bytes</td></tr><tr><td>echidna.jpg</td><td>rezero &lt;3</td><td>2020 September 03 22:24:03.</td><td>43372 bytes</td></tr><tr><td>sensei.gif</td><td>Mi amor</td><td>2020 September 03 22:07:09.</td><td>3689838 bytes</td></tr></tbody></table>
+</p><p><table class="description" border="1">
+<tbody><tr><th>Filename</th><th>Description</th><th>File Modified Date</th><th>File Size</th></tr><tr><td>Choe.jpg</td><td>This is third</td><td>2020 September 04 03:31:17.</td><td>117663 bytes</td></tr><tr><td>onodera.png</td><td>best girl</td><td>2020 September 03 22:18:35.</td><td>288063 bytes</td></tr><tr><td>echidna.jpg</td><td>rezero &lt;3</td><td>2020 September 03 22:24:03.</td><td>43372 bytes</td></tr><tr><td>sensei.gif</td><td>Mi amor</td><td>2020 September 03 22:07:09.</td><td>3689838 bytes</td></tr><tr><td>echidna.jpg</td><td>rezero &lt;3</td><td>2020 September 03 22:24:03.</td><td>43372 bytes</td></tr><tr><td>yui.gif</td><td>This is second</td><td>2020 September 04 03:30:31.</td><td>1110631 bytes</td></tr><tr><td>sensei.gif</td><td>Mi amor</td><td>2020 September 03 22:07:09.</td><td>3689838 bytes</td></tr><tr><td>choe2.webp</td><td>This is kpop choe</td><td>2020 September 04 03:32:09.</td><td>88452 bytes</td></tr><tr><td>shizuka_hiratsuka.jpg</td><td>i drew this 🥺</td><td>1969 December 31 18:00:00.</td><td> bytes</td></tr><tr><td>Chitoge.png</td><td>This is one</td><td>2020 September 04 03:28:55.</td><td>185385 bytes</td></tr><tr><td>yuki.gif</td><td>mi amor2</td><td>2020 September 03 22:10:19.</td><td>24245514 bytes</td></tr><tr><td>yuki.gif</td><td>mi amor2</td><td>2020 September 03 22:10:19.</td><td>24245514 bytes</td></tr></tbody></table>
+</p><p></p></body></html>

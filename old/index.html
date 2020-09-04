@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.png" type="image/png">
+        <script src="https://kit.fontawesome.com/7ad5218c7d.js" crossorigin="anonymous"></script>
+        <style>
+            html {
+                height: 100%;
+            }
+
+            body {
+                background-color: #050505;
+                color: white;
+                font-family: "Segoe UI",Arial,sans-serif;
+                height: 100%;
+            }
+
+            header {
+                height: 40%;
+                margin: auto auto;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+
+            tabs {
+                position: relative;
+                height: 60%;
+                width: 100%;
+            }
+
+            hr {
+                margin-bottom: 20px;
+            }
+            .content {
+                max-width: 500px;
+                margin: auto;
+                background: #050505;
+                padding: 10px;
+                width: 100%;
+                display: block;
+                text-align: center;
+                font-family: "Segoe UI",Arial,sans-serif;
+            }
+            .container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -moz-transform: translateX(-50%) translateY(-50%);
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+                max-width: 500px;
+                margin: auto;
+                background: black;
+                padding: 10px;
+                width: 100%;
+                display: block;
+                text-align: center;
+                font-family: "Segoe UI",Arial,sans-serif;
+            }
+        </style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="annYsuHo">
+        <meta name="author" content="annYsuHo">
+        <title>annYsuHo</title>
+        <link rel="icon" href="img/favicon.ico">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <script>
+    
+            $(function () {
+                $("#footer").load("footer.html");$("#side-bar-right").load("side-bar-right.html"); $("#content-down").load("content-down.html"); $("#content-up").load("content-up.html");
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="asdf">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="annysuho.html">annYsuHo</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="annysuho.html">Something Else</a></li>
+                        <li><a href="annysuho.html">Other Thing</a></li>
+                        <li><a href="annysuho.html">Thing 5</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div><!--navbar -->
+        <header>
+            <div class="container">
+                <h0>This website is hand coded and underconstruction; please bear with me.</h0>
+                <h0>Click About to learn more about me</h0>
+                <h1>annYsuHo</h1>
+                <h2 class="buttons">
+                    <a class="link" href="resume.pdf">
+                        <i class="fas fa-file"></i>
+                    </a>
+                    <a class="link" href="mailto:annysuho@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a class="link" href="https://www.linkedin.com/in/anny-suho-250642186">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a class="link" href="https://github.com/annysuho">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="link" href="https://www.youtube.com/channel/UCjuiT_kNQK7PCQoXBMCbLFg">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="link" href="https://www.google.com">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </h2>
+            </div>
+        </header>
+    <!--
+        <tabs>
+            <div class="bar">
+                <button class="bar-item" onclick="showTab('Projects')">Projects</button>
+                <button class="bar-item" onclick="showTab('Games')">Games</button>
+                <button class="bar-item" onclick="showTab('Music')">Music</button>
+            </div>
+            
+            <div id="Projects" class="tab">
+                <div class="tab-header">Project Links</div>
+                <hr>
+                <a class="tab-link" href="https://audemos.space/">
+                    <span class="tab-item">
+                        audemos.space - Audio sharing website, allows private sharing of audio files up to 250 MB in size for 3 days
+                    </span>
+                </a>
+                <p>See github for more projects</p>
+            </div>
+
+            <div id="Games" class="tab" style="display:none">
+                <div class="tab-header">Games</div>
+                <hr>
+                <a class="tab-link" href="">
+                    <span class="tab-item">
+                        Ship Game - Space Exploration/Combat Game
+                    </span>
+                </a>
+                <div>
+                    <img class="image" src="ShipGame1.png">
+                    <img class="image" src="ShipGame2.png">
+                </div>
+                <a class="tab-link" href="">
+                    <span class="tab-item">
+                        Spellsword - Top-Down Action RPG
+                    </span>
+                </a>
+                <div>
+                    <img class="image" src="TopDownGame1.png">
+                    <img class="image" src="TopDownGame2.png">
+                </div>
+                <p>See github for more projects</p>
+            </div>
+
+            <div id="Music" class="tab" style="display:none">
+                <div class="tab-header">Music</div>
+                <hr>
+                <div>
+                    <iframe class="music" width="420" height="315" frameborder="0"
+                        src="https://www.youtube.com/embed/U5HAo_7wTJY">
+                    </iframe>
+                    <iframe class="music" width="420" height="315" frameborder="0"
+                        src="https://www.youtube.com/embed/vsn1UUbgNcY">
+                    </iframe>
+                    <iframe class="music" width="420" height="315" frameborder="0"
+                        src="https://www.youtube.com/embed/yeo5qQYDRFs">
+                    </iframe>
+                    <iframe class="music" width="420" height="315" frameborder="0"
+                        src="https://www.youtube.com/embed/P0slAiEEdiE">
+                    </iframe>
+                    <iframe class="music" width="420" height="315" frameborder="0"
+                        src="https://www.youtube.com/embed/A4Cxy6EMX2I">
+                    </iframe>
+                    <iframe class="music" width="420" height="315" frameborder="0"
+                        src="https://www.youtube.com/embed/wmy5NaYS9Oo">
+                    </iframe>
+                    <iframe class="music" width="420" height="315" frameborder="0"
+                        src="https://www.youtube.com/embed/RgWoiyHgZvE">
+                    </iframe>
+                    <iframe class="music" width="420" height="315" frameborder="0"
+                        src="https://www.youtube.com/embed/JaYrTe7Bi6g">
+                    </iframe>
+                </div>
+            </div>
+        </tabs>
+    -->
+    </body>
+
+    <script>
+        function showTab(tabName) {
+            var i;
+            var x = document.getElementsByClassName("tab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+
+</html>
